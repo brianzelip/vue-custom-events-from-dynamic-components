@@ -20,6 +20,6 @@ export default {
 <style scoped>
 #B {
   padding: 1rem;
-  background: green;
+  background: turquoise;
 }
 </style>
