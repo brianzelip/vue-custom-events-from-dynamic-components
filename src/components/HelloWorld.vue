@@ -35,7 +35,7 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(function() {
+    this.$nextTick(() => {
       // Code that will run only after the
       // entire view has been rendered
       this.$on("swap-components", this.swapComponents);
