@@ -11,7 +11,7 @@ export default {
   props: ["data"],
   methods: {
     click() {
-      this.$emit("swap-components");
+      this.$emit("swap-components", "jolly good bro!");
     }
   }
 };

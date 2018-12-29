@@ -11,7 +11,7 @@ export default {
   props: ["color"],
   methods: {
     click() {
-      this.$emit("swap-components");
+      this.$emit("swap-components", "now ur talking homey!");
     }
   }
 };
