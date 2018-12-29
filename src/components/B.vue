@@ -2,7 +2,7 @@
   <section id="B">
     <h1>Component B</h1>
     <p>Color prop sent from parent: "{{ color }}"</p>
-    <button @click="click">I'm from the dynamic component - click me to swap components</button>
+    <button @click="click">Click me to swap components from within the dynamic component</button>
   </section>
 </template>
 

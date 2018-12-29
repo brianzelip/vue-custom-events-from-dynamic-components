@@ -7,7 +7,7 @@
     ></component>
     <button
       @click="click"
-    >I'm from the parent of the dynamic component - click me to swap components</button>
+    >Click me to swap components from within the parent of the dynamic component</button>
   </div>
 </template>
 
