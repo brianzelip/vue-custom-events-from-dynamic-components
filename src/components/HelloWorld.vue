@@ -4,6 +4,7 @@
     <component
       :is="current"
       v-bind="dynamicProps"
+      v-on:swap-components="swapComponents"
     ></component>
     <button
       @click="click"
@@ -18,7 +19,8 @@ import B from "./B.vue";
 export default {
   data() {
     return {
-      current: "A"
+      current: "A",
+      passedData: ""
     };
   },
   computed: {
@@ -30,8 +32,9 @@ export default {
     click() {
       this.$emit("swap-components");
     },
-    swapComponents() {
+    swapComponents(str) {
       this.current = this.current === "A" ? "B" : "A";
+      this.passedData = str;
     }
   },
   mounted() {
